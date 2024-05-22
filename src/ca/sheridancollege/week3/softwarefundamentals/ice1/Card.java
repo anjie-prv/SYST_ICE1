@@ -1,8 +1,10 @@
+
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ Card Class.
+ Modifier: Parvatie Persaud
+ Student ID: 991517197
  */
+
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
 /**
@@ -20,9 +22,18 @@ public class Card {
    private int value;//1-13
 
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
-    /**
+     //DefaultConstructor
+   public Card(){}
+   
+   //parameters
+   public Card(int value, String suit){
+       this.value=value;
+       this.suit=suit;
+   }
+   /**
      * @return the suit
      */
+   
     public String getSuit() {
         return suit;
     }
